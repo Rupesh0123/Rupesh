@@ -1,0 +1,62 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:GetResponseHeadersPolicyConfig",
+                "cloudfront:GetFunction",
+                "cloudfront:DescribeFunction",
+                "cloudfront:GetOriginAccessControlConfig",
+                "cloudfront:GetResponseHeadersPolicy",
+                "cloudfront:GetOriginAccessControl",
+                "cloudfront:GetFieldLevelEncryptionProfileConfig",
+                "cloudfront:GetFieldLevelEncryptionProfile"
+            ],
+            "Resource": [
+                "arn:aws:cloudfront::330160419628:function/*",
+                "arn:aws:cloudfront::330160419628:response-headers-policy/*",
+                "arn:aws:cloudfront::330160419628:origin-access-control/*",
+                "arn:aws:cloudfront::330160419628:field-level-encryption-profile/*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "cloudfront:ListCloudFrontOriginAccessIdentities",
+                "cloudfront:ListFunctions",
+                "cloudfront:ListOriginAccessControls",
+                "cloudfront:ListFieldLevelEncryptionConfigs",
+                "cloudfront:GetPublicKeyConfig",
+                "cloudfront:GetMonitoringSubscription",
+                "cloudfront:ListOriginRequestPolicies",
+                "cloudfront:GetSavingsPlan",
+                "cloudfront:ListDistributionsByRealtimeLogConfig",
+                "cloudfront:ListKeyGroups",
+                "cloudfront:ListSavingsPlans",
+                "cloudfront:ListRateCards",
+                "cloudfront:GetKeyGroup",
+                "cloudfront:ListContinuousDeploymentPolicies",
+                "cloudfront:GetKeyGroupConfig",
+                "cloudfront:ListUsages",
+                "cloudfront:ListResponseHeadersPolicies",
+                "cloudfront:ListDistributionsByCachePolicyId",
+                "cloudfront:ListDistributionsByLambdaFunction",
+                "cloudfront:GetPublicKey",
+                "cloudfront:ListCachePolicies",
+                "cloudfront:ListDistributionsByKeyGroup",
+                "cloudfront:ListPublicKeys",
+                "cloudfront:ListRealtimeLogConfigs",
+                "cloudfront:ListFieldLevelEncryptionProfiles",
+                "cloudfront:ListDistributions",
+                "cloudfront:ListStreamingDistributions",
+                "cloudfront:ListDistributionsByWebACLId",
+                "cloudfront:ListDistributionsByResponseHeadersPolicyId",
+                "cloudfront:ListDistributionsByOriginRequestPolicyId"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

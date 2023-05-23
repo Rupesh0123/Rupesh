@@ -1,0 +1,63 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBClusterSnapshotAttributes",
+                "rds:DescribeDBClusterParameters",
+                "rds:DescribeDBInstanceAutomatedBackups",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBSubnetGroups",
+                "rds:DescribePendingMaintenanceActions",
+                "rds:DescribeDBLogFiles",
+                "rds:DescribeDBParameterGroups",
+                "rds:DescribeDBSnapshotAttributes",
+                "rds:DescribeReservedDBInstances",
+                "rds:DescribeDBProxyTargets",
+                "rds:DescribeBlueGreenDeployments",
+                "rds:ListTagsForResource",
+                "rds:DescribeValidDBInstanceModifications",
+                "rds:DownloadDBLogFilePortion",
+                "rds:DescribeDBClusterSnapshots",
+                "rds:DescribeDBInstances",
+                "rds:DownloadCompleteDBLogFile",
+                "rds:DescribeDBParameters",
+                "rds:DescribeDBClusterParameterGroups"
+            ],
+            "Resource": [
+                "arn:aws:rds:*:330160419628:cev:*/*/*",
+                "arn:aws:rds:*:330160419628:snapshot:*",
+                "arn:aws:rds:*:330160419628:cluster-pg:*",
+                "arn:aws:rds:*:330160419628:cluster-snapshot:*",
+                "arn:aws:rds:*:330160419628:deployment:*",
+                "arn:aws:rds:*:330160419628:target-group:*",
+                "arn:aws:rds:*:330160419628:db:*",
+                "arn:aws:rds:*:330160419628:subgrp:*",
+                "arn:aws:rds:*:330160419628:pg:*",
+                "arn:aws:rds:*:330160419628:ri:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBEngineVersions",
+                "rds:DescribeExportTasks",
+                "rds:DescribeEngineDefaultParameters",
+                "rds:DescribeRecommendations",
+                "rds:DescribeReservedDBInstancesOfferings",
+                "rds:DescribeRecommendationGroups",
+                "rds:DescribeOrderableDBInstanceOptions",
+                "rds:DescribeEngineDefaultClusterParameters",
+                "rds:DescribeSourceRegions",
+                "rds:DescribeCertificates",
+                "rds:DescribeEventCategories",
+                "rds:DescribeAccountAttributes",
+                "rds:DescribeEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

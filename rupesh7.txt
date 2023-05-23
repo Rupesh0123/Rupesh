@@ -1,0 +1,49 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBClusterParameters",
+                "rds:DescribeDBProxyTargets",
+                "rds:DescribeBlueGreenDeployments",
+                "rds:ListTagsForResource",
+                "rds:DescribeDBSnapshots",
+                "rds:DescribeDBSubnetGroups",
+                "rds:DescribeOptionGroupOptions",
+                "rds:DescribeDBSnapshotAttributes",
+                "rds:DescribeOptionGroups",
+                "rds:DescribeDBClusterParameterGroups"
+            ],
+            "Resource": [
+                "arn:aws:rds:*:330160419628:og:*",
+                "arn:aws:rds:*:330160419628:snapshot:*",
+                "arn:aws:rds:*:330160419628:cluster-pg:*",
+                "arn:aws:rds:*:330160419628:deployment:*",
+                "arn:aws:rds:*:330160419628:target-group:*",
+                "arn:aws:rds:*:330160419628:subgrp:*"
+            ]
+        },
+        {
+            "Sid": "VisualEditor1",
+            "Effect": "Allow",
+            "Action": [
+                "rds:DescribeDBEngineVersions",
+                "rds:DescribeExportTasks",
+                "rds:DescribeEngineDefaultParameters",
+                "rds:DescribeRecommendations",
+                "rds:DescribeReservedDBInstancesOfferings",
+                "rds:DescribeRecommendationGroups",
+                "rds:DescribeOrderableDBInstanceOptions",
+                "rds:DescribeEngineDefaultClusterParameters",
+                "rds:DescribeSourceRegions",
+                "rds:DescribeCertificates",
+                "rds:DescribeEventCategories",
+                "rds:DescribeAccountAttributes",
+                "rds:DescribeEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
